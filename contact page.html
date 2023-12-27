@@ -1,0 +1,88 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.submit {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>Feedback Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="india">India</option>
+      <option value="korea">Korea</option>
+      <option value="france">France</option>
+      <option value="germany">Germany</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <label for="Rating">Rate your experience</label>
+    <link rel="stylesheet" href="feedback.css">
+    <div class="rate">
+        <input type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="text">&#9734</label>
+        <input type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="text">&#9734</label>
+        <input type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="text">&#9734</label>
+        <input type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="text">&#9734</label>
+        <input type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="text">&#9734</label>
+      </div>
+      
+      <a href="Thank you page.html"class="submit">Submit</a>
+     
+    
+  </form>
+</div>
+
+</body>
+</html>
